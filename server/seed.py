@@ -34,6 +34,7 @@ with app.app_context():
             username=username,
             bio=fake.paragraph(nb_sentences=3),
             image_url=fake.url(),
+            # password = 'password'
         )
 
         user.password_hash = user.username + 'password'
